@@ -45,9 +45,9 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    post("/newteam", (response, request) -> {
+    post("/teams", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      String teamName = request.queryParams("name");
+      String teamName = request.queryParams("team-name");
       Team newTeam = new Team(teamName);
       model.put("template", "templates/team-success.vtl");
       return new ModelAndView(model, layout);
