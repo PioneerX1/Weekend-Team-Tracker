@@ -8,7 +8,7 @@ public class MemberTest {
   }
 
   @Test
-  public void Member_instantiatesCorrectly_true() {
+  public void member_instantiatesCorrectly_true() {
     Member testMember = new Member("Fred");
     assertEquals(true, testMember instanceof Member);
   }
@@ -44,7 +44,7 @@ public class MemberTest {
     assertEquals(2, Member.getAllMembers().size());
   }
   @Test
-  public void findMember_retrievesMemberWithSameId_Fred() {
+  public void findMember_retrievesMemberWithSameId_FredMember() {
     Member testMember = new Member("Fred");
     Member testMember2 = new Member("Chuck");
     assertEquals(testMember, Member.findMember(testMember.getMemberId()));
