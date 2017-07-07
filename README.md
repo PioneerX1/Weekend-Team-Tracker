@@ -25,7 +25,7 @@ _This application can be used by a Weekend Hackathon Coordinator to manage and t
 |User is on Details page|User can read the content to learn more about the hackathon event and then click on Click Here to view all teams|User clicks on that link and goes back to Home page with teams listed|
 |User is on a specific Team page like the Rogue Yoshi's, this shows all members currently under that team|User can click on Add a New Member to add additional members to that team or go back to Home Page|IF Add a new Member clicked, they go to New Member Form page, IF they click on View All Teams, they go back to Home Page|
 |User is on Add New Member page|User types in the Member name in field and clicks the submit button|User then goes to a member success page where they can go back and see all that specific team's members with the new member now added|
- 
+
 
 ## Known Bugs
 
@@ -37,7 +37,7 @@ _Please contact Mick Sexton at lacrookedbeat@hotmail.com for any questions, feed
 
 ## Technologies Used
 
-_Technologies used include Java, Atom, Git, Gradle, GitHub, Spark, CSS, and Velocity_
+_Technologies used include Java, Atom, Git, Gradle, GitHub, Spark, CSS, J-Unit, and Velocity_
 
 ### License
 
