@@ -1,11 +1,17 @@
 <!--index.vtl-->
 <h1>Welcome to the Weekend Hackathon Team Tracker</h1>
 
-<a href="/details">Learn More About Our Hackathon Event</a>
-<br>
+<h3>All Teams</h3>
+<ul>
+  #foreach ($team in $teams)
+    <li><a href="/teams/$team.getTeamId()">$team.getTeamName()</a></li>
+  #end
+</ul>
 
-<a href="/teams">View Team List</a>
 <br>
 <a href="/newteam">Add a New Team</a>
+<br>
+<a href="/details">Learn More About Our Hackathon Event</a>
+
 
 <!--index.vtl-->

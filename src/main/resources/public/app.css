@@ -1,0 +1,6 @@
+body {
+  background-image: url(../images/pic4.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+}
