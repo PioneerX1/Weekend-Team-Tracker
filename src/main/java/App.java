@@ -9,15 +9,9 @@ public class App {
   public static void main(String[] args) {
     staticFileLocation("/public");
     String layout = "templates/layout.vtl";
-
+    
     //create a couple teams and members to get the coordinator started - demo data
-    Team defaultTeam1 = new Team("The Rogue Yoshi's");
-    Member defaultMember1 = new Member("Luigi");
-    defaultTeam1.addMember(defaultMember1);
-    Team defaultTeam2 =  new Team("Twin Peaks");
-    Member defaultMember2 = new Member("Laura Palmer");
-    defaultTeam2.addMember(defaultMember2);
-
+    populateDemoData();
 
     get("/", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
@@ -80,5 +74,13 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
+  }
+  public static void populateDemoData() {
+    Team defaultTeam1 = new Team("The Rogue Yoshi's");
+    Member defaultMember1 = new Member("Luigi");
+    defaultTeam1.addMember(defaultMember1);
+    Team defaultTeam2 =  new Team("Twin Peaks");
+    Member defaultMember2 = new Member("Laura Palmer");
+    defaultTeam2.addMember(defaultMember2);
   }
 }
