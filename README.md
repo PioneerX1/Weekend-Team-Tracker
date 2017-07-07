@@ -10,6 +10,8 @@ _This application can be used by a Weekend Hackathon Coordinator to manage and t
 
 ## Setup/Installation Requirements
 
+* _Visit the online Heroku version at_
+* _https://rocky-bastion-27439.herokuapp.com/ OR_
 * _Download the Weekend-Team-Tracker folder_
 * _type in "gradle run" in your command line_
 * _open a browser and go to localhost:4567_
